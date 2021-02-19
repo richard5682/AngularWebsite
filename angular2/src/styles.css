@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+    font-family: Spartan;
+    src: url("./assets/font/spartan-mb.bold.otf");
+}
+body{
+    position:fixed;
+    width:100%;
+
+    font-family: Spartan;
+    font-size:100%;
+}
+html, body { height: 100%; }
+body { margin-bottom: 100em; font-family: Roboto, "Helvetica Neue", sans-serif; }

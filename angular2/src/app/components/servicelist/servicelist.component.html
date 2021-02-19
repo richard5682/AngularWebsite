@@ -1,0 +1,9 @@
+<div class="wrapper">
+    <mat-card mat-raised-button class= "container" [routerLink]="['/service',service.id]"
+    *ngFor="let service of datas.servicesQuery">
+        <img *ngIf="service.thumbnail_link!=''" [src]="'http://localhost/PHPfiles/image/'+service.thumbnail_link+'.png'">
+        <h1> {{service.title}}</h1>
+        <p>{{service.description}}</p>
+    </mat-card>
+    
+</div>

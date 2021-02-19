@@ -1,0 +1,16 @@
+img{
+    width:5em;
+    border-radius: 50%;
+    border:solid rgba(255, 255, 255, 0.541);
+    margin:0;
+}
+p{
+    position: absolute;
+    top:2em;
+    left:-1em;
+    font-size: 1.3em;
+    margin:0;
+    color:white;
+    -webkit-text-stroke-width: 0.08em;
+    -webkit-text-stroke-color: black;
+}

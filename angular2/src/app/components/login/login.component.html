@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div class="container">
+    <mat-form-field appearance="fill">
+      <mat-label>Username</mat-label>
+      <input matInput name="username" type="text" [(ngModel)]="username"><br>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput name="password"type= "password" [(ngModel)]="password"><br>
+    </mat-form-field>
+    <br>
+
+    <br><button mat-raised-button (click)="submit()">submit</button><br>
+    <button mat-raised-button (click)="register()">register</button><br>
+  </div>
+</div>

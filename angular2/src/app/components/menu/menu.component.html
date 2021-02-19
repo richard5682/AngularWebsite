@@ -1,0 +1,8 @@
+<div class="wrapper" [id]="menuwrapper">
+  <div *ngFor="let choice of menuchoices">
+    <a (click)="hide(choice.name)" *ngIf="choice.showing.showing"  [routerLink]="choice.link" >
+      <mat-icon>{{choice.icon}}</mat-icon>
+      <h4>{{choice.name}}</h4>
+    </a>
+</div>
+</div>

@@ -1,0 +1,12 @@
+.icon1{
+    position:relative;
+    margin:0;
+    right:-0.5em;
+}
+button{
+    margin:2em;
+}
+mat-form-field{
+    margin:2em;
+    color:yellow;
+}

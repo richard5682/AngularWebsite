@@ -1,0 +1,22 @@
+<div class="container" >
+  <div class="logo">
+    <h1>CLICK</h1>
+  </div>
+  <div class="accountView">
+    <app-accountView [accountData]="loginService.account_data"></app-accountView>
+  </div>
+  <div class="iconButton">
+    <div class="iconContainer">
+      <button color="primary" mat-fab matTooltip="ACCOUNT">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <button color="accent" mat-fab matTooltip="CHAT">
+        <mat-icon>3p</mat-icon>
+      </button>
+      
+    </div>
+  </div>
+  <button mat-raised-button (click)="menuClicked()" class="button">
+  <mat-icon color="icon1color">menu</mat-icon>
+  </button>
+</div>

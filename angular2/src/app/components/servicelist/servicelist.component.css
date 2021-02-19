@@ -1,0 +1,45 @@
+.wrapper{
+    background-color:rgba(255, 196, 0, 0.308);
+    margin-top:1em;
+    width:100%;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap :wrap;
+    font-size:80%;
+    justify-content:left;
+}
+.container{
+    padding:1em;
+}
+
+.bookButton{
+    padding:0.5em;
+    border:none;
+    width:30%;
+    border-radius: 0.5em;
+    border-bottom: solid lightseagreen;
+}
+@media screen AND (min-width: 927px){
+    .container{
+        width:30%;
+        margin:1em 1em 1em 1em;
+        max-width:20em;
+    }
+    img{
+    max-height:20em;
+    max-width:20em;
+    }
+}
+@media screen AND (max-width: 927px){
+    .container{
+        font-size:1em;
+        margin-top:1em;
+        width:100%;
+        max-height:15em;
+    }
+     img{
+    max-height:10em;
+    max-width:20em;
+    }
+}

@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <div class="container">
+  <mat-form-field appearance="fill" [class]="usererror ? 'error' : 'goods'">
+    <mat-label>Username</mat-label>
+    <mat-hint>Enter Username 6-15 char</mat-hint>
+    <input required matInput type='text' [(ngModel)]="username">
+  </mat-form-field>
+  <mat-form-field appearance="fill" [class]="passerror ? 'error' : 'goods'">
+    <mat-label>Password</mat-label>
+    <mat-hint>Enter a Password 6-15 char</mat-hint>
+    <input required matInput [type]="showPassword? 'password':'text'" [(ngModel)]="password">
+    <button mat-icon-button matSuffix (click)="showPassword = !showPassword">
+      <mat-icon>{{showPassword ? 'visibility' : 'visibility_off'}}</mat-icon>
+    </button>
+    
+  </mat-form-field>
+  <mat-form-field appearance="fill" [class]="repasserror ? 'error' : 'goods'">
+    <mat-label>Re-Password</mat-label>
+    <mat-hint>Re-Enter your Password</mat-hint>
+    <input required matInput [type]="showPassword? 'password':'text'" [(ngModel)]="repassword">
+    <button mat-icon-button matSuffix (click)="showPassword = !showPassword">
+      <mat-icon>{{showPassword ? 'visibility':'visibility_off'}}</mat-icon>
+    </button>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Email Adress</mat-label>
+    <mat-hint>Enter Email</mat-hint>
+    <input required matInput type='text' [(ngModel)]="email">
+  </mat-form-field><br>
+  <button mat-raised-button (click)="submit()">Submit</button>
+</div>
+</div>

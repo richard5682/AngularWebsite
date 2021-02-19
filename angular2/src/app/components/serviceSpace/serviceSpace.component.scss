@@ -1,0 +1,79 @@
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    .information_board{
+        background-color: khaki;
+        width:calc(95% - 3em);
+        margin-left:3em;;
+        margin-top:1em;
+        min-width:900px;
+        display:flex;
+        .picture_panel{
+            background-color: rgba(255, 0, 0, 0.253);
+            margin-top:1em;
+            margin-bottom:1em;
+            margin-left:1em;
+            margin-right:0.1em;
+            width:33%;
+
+            .thumbnail_image{
+                width:calc(100% - 0.6em);
+                margin:0.3em;
+            }
+            .otherpictures_panel{
+                width:calc(98%);
+                display:flex;
+                margin:5%;
+                flex-flow:wrap;
+                img{
+                    margin:1%;
+                    width: 28%;
+                }
+            }
+        }
+        .info_panel{
+            background-color: rgba(0, 0, 255, 0.205);
+            margin-top:1em;
+            margin-bottom:1em;
+            margin-left:0.1em;
+            margin-right:0.1em;
+            width:33%;
+            .ownerinfo_panel{
+                display:flex;
+                flex-direction: row;
+                
+                img{
+                    border-radius:50%;
+                    width:30%;
+                    margin:4%;
+                    max-width: 5em;
+                }
+                h1{
+                    margin-top: 13%;
+                    font-size:120%;
+                }
+            }
+            .serviceinfo_panel{
+                margin:1em;
+                h1{
+                    font-size:150%;
+                }
+            }
+        }
+        .technical_panel{
+            background-color:rgba(0, 128, 0, 0.192);
+            margin:1em;
+            width:33%;
+            margin-top:1em;
+            margin-bottom:1em;
+            margin-left:0.1em;
+            margin-right:1em;
+        }
+    }
+    .feedback_board{
+
+    }
+    .recommended_board{
+
+    }
+}

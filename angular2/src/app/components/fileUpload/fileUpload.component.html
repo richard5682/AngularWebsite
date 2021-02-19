@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <form>
+    <input #inputfile type="file" name="image" accept="image/*" (change)="submit($event)">
+    <img *ngIf="imageDATAURL" [src]="imageDATAURL">
+  </form>
+  <button mat-raised-button color='color1' (click)="upload()">SUBMIT</button>
+</div>
+
+
+
+
+

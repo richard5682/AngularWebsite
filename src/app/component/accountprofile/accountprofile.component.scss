@@ -1,0 +1,48 @@
+.wrapper{
+    
+    margin-top:4em;
+    .imagepanel{
+        text-align: center;
+        background: rgba(210, 105, 30, 0.363);
+        padding:1em;
+        img{
+            border:solid;
+            width:10em;
+            
+        }
+    }
+    .services{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        .bookmarkservices{
+            margin-right:1em;
+            max-width:50%;
+            display:block;
+            h3{
+                margin-left:1em;
+            }
+            .services{
+                display:flex;
+                flex-wrap:wrap;
+                justify-content: space-evenly;
+            }
+        }
+        .accountservices{
+            max-width:50%;
+            display:block;
+            h3{
+                margin-left:1em;
+            }
+            .services{
+                display:flex;
+                flex-wrap:wrap;
+                justify-content: space-evenly;
+            }
+        }
+        .servicecontainer{
+            width:10%;
+            margin:1em;
+        }
+    }
+}

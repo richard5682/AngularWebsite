@@ -1,0 +1,14 @@
+.wrapper{
+   mat-card{
+       width:100%;
+       height: 100%;
+       text-align: center;
+       img{
+           width:100%;
+           height:100%;
+       }
+       border-right:solid;
+       border-left:solid;
+       border-color:rgba(0, 0, 0, 0.233);
+   }
+}

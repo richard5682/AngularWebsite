@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div class="firstblock">
+    <div matRipple class="logo" (click)="router.navigate(['homepage'])">
+      <img src="assets/image2.PNG">
+      <h1>CLICK</h1>
+    </div>
+    <app-accountview [username]="username"></app-accountview>
+  </div>
+  <div class="navblock">
+    <button matTooltip="Home" mat-icon-button (click)="router.navigate(['homepage'])">
+      <mat-icon>home</mat-icon>
+    </button>
+    <button matTooltip="Cart" mat-icon-button>
+      <mat-icon>shopping_cart</mat-icon>
+    </button>
+    <button matTooltip="Login" mat-icon-button (click)="router.navigate(['login'])">
+      <mat-icon>login</mat-icon>
+    </button>
+  </div>
+</div>

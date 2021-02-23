@@ -1,0 +1,90 @@
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display:block;
+    .topblock{
+        width:100%;
+        margin-top:5em;
+        
+        display:flex;
+        flex-wrap:nowrap;
+        .imagepanel{
+            width:20%;
+            padding-right:4em;
+            padding-bottom: 2em;
+            margin:0;
+            background-color: rgba(255, 136, 0, 0.404);
+            .servicecardslot{
+                margin:0%;
+                padding:1em;
+                width:100%;
+                
+            }
+        }
+        .infopanel{
+            border-left: solid rgba(255, 166, 0, 0.418);
+            background-color: rgba(255, 166, 0, 0.349);
+            width:80%;
+            h1{
+                margin:0;
+                padding:0.4em;
+                color:white;
+                background-color: orange;
+            }
+            .info{
+                
+                h3{
+                    margin:0.1em;
+                }
+                p{
+                    margin:0;
+                }
+                padding-left:1em;
+            }
+            
+        }
+        
+    }
+    .midblock{
+        .moreinfopanel{
+            
+            h1{
+                margin:0;
+                padding: 0.2em 0 0.2em 1em;
+                background-color: orange;
+                color:white;
+            }
+            
+        }
+        h2{
+            padding-left:1em;
+        }
+        .ratingpanel{
+            padding-left:1em;
+            display:flex;
+            app-rating{
+                font-size: 3em;
+            }
+            h2{
+                margin-top:0.4em;
+            }
+        }
+        .commentpanel{
+            padding-left:2em;
+            border-radius: 2em;
+            background-color: rgb(255, 166, 0);
+            .comment{
+                padding:1em;
+                display:flex;
+                justify-content: start;
+                padding-bottom:0;
+                app-accountview{
+                    padding-right:1em;
+                }
+                app-comment{
+                    
+                }
+            }
+        }
+    }
+}

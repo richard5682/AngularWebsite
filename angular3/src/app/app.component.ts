@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router, RouterEvent } from '@angular/router';
+import { NavigationEnd, NavigationStart, Router, RouterEvent } from '@angular/router';
+import { LoginService } from './service/connect/login.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { NavigationEnd, Router, RouterEvent } from '@angular/router';
 })
 export class AppComponent implements OnInit{
   title = 'my-first-app';
-  constructor(private router:Router){}
+  constructor(private router:Router,private loginService:LoginService){}
   ngOnInit(){
     this.router.events.subscribe(
       (evt) => { if((evt instanceof NavigationEnd)){
@@ -16,5 +17,10 @@ export class AppComponent implements OnInit{
       }
       window.scrollTo(0,0);
     })
+    this.router.events.subscribe((event)=>
+      {if(event instanceof NavigationStart){
+        this.loginService.checkLoggedIn();
+      }}
+    );
   }
 }

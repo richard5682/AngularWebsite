@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="uploadpane">
+    <input type="file" accept="image/*" (change)="filechange($event)">
+  </div>
+  <div class="imagepane">
+  <img [src]='imagedisplay'>
+  </div>
+  <button mat-raised-button (click)='uploadfile()'>upload</button>
+</div>

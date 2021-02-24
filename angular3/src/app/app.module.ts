@@ -22,6 +22,8 @@ import { ServicepageComponent } from './component/servicepage/servicepage.compon
 import { CommentComponent } from './component/comment/comment.component';
 import { ConnectService } from './service/connect/connect.service';
 import { HttpClientModule } from '@angular/common/http';
+import { RegisterComponent } from './component/register/register.component';
+import { UploadfileComponent } from './component/uploadfile/uploadfile.component';
 
 @NgModule({
   declarations: [			
@@ -38,7 +40,10 @@ import { HttpClientModule } from '@angular/common/http';
     RatingComponent,
     LoginComponent,
     TextboxComponent,
-    ServicepageComponent,CommentComponent
+    ServicepageComponent,
+    CommentComponent,
+    RegisterComponent,
+    UploadfileComponent
    ],
   imports: [
     BrowserModule,
@@ -49,7 +54,8 @@ import { HttpClientModule } from '@angular/common/http';
       {path:'',component:HomepageComponent},
       {path:'account',component:AccountprofileComponent},
       {path:'login',component:LoginComponent},
-      {path:'service/:id',component:ServicepageComponent}
+      {path:'service/:id',component:ServicepageComponent},
+      {path:'register',component:RegisterComponent}
     ]),
     FormsModule,HttpClientModule
   ],

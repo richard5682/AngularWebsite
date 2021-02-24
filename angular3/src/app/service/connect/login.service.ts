@@ -42,5 +42,29 @@ export class LoginService implements OnInit{
   notifyLogin():Observable<any>{
     return this.subject.asObservable();
   }
-  
+  checkLoggedIn(){
+    this.connect.getRequest('getlogin').subscribe(
+      (data) => {
+        if(data['result'] == 1){
+          this.userLoggedIn = true;
+          this.loginID = data['id'];
+          this.loginUsername = data['username'];
+          this.subject.next(data);
+          
+        }
+      }
+    );
+  }
+  logout(){
+    this.connect.getRequest('logout').subscribe(
+      (data)=>{
+        if(data['result']==1){
+          this.userLoggedIn = false;
+          this.loginID =0;
+          this.loginUsername = 'GUEST';
+          this.subject.next({id:0,username:'GUEST'})
+        }
+      }
+    );
+  }
 }

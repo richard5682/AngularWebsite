@@ -4,7 +4,7 @@
     src: url(assets/LeagueSpartan-Bold.otf) format("opentype");
 }
 html, body { 
-    height:fit-content; 
+    height:100%;
     overflow-x: none;
     background: linear-gradient(rgba(255, 102, 0, 0.233),rgba(255, 255, 255, 0.274));
 }

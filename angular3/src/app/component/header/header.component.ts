@@ -10,6 +10,8 @@ import { LoginService } from 'src/app/service/connect/login.service';
 export class HeaderComponent implements OnInit {
   router:Router;
   username:string;
+  LoggedIn:boolean = false;
+
   constructor(router:Router,private loginservice:LoginService) { 
     this.router = router;
     
@@ -19,9 +21,17 @@ export class HeaderComponent implements OnInit {
     this.loginservice.notifyLogin().subscribe(
       data=>{
         this.username=data['username'];
+        if(data['result'] == 1){
+          this.LoggedIn = true;
+        }else{
+          this.LoggedIn=false;
+        }
       },
       error => console.log(error)
     );
   }
-
+  logout(){
+    this.loginservice.logout();
+    this.router.navigate(['homepage']);
+  }
 }

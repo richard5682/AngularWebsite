@@ -8,10 +8,14 @@ import { Component, Input, OnInit, Output } from '@angular/core';
 export class TextboxComponent implements OnInit {
   @Input() type:string;
   @Input() label:string;
+  dtype:string;
   text:string;
-  constructor() { }
+  constructor() { 
+    
+  }
 
   ngOnInit() {
+    this.dtype=this.type;
   }
 
 }
